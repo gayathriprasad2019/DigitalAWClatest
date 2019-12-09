@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_awc_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AWC Location: Location of AWC"
+
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="@id/tv_awc_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_awc_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AWC Id:100"
+
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="@id/tv_awc_anm"
+        app:layout_constraintStart_toStartOf="@id/tv_awc_location"
+        app:layout_constraintTop_toTopOf="@id/tv_awc_location">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_awc_anm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ANM: Name of concerned ANM"
+
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="@id/tv_awc_asha"
+        app:layout_constraintStart_toStartOf="@id/tv_awc_id"
+        app:layout_constraintTop_toTopOf="@id/tv_awc_id">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_awc_asha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ASHA Worker: Name of concerned ASHA worker"
+
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="@id/tv_awc_doctor"
+        app:layout_constraintStart_toStartOf="@id/tv_awc_anm"
+        app:layout_constraintTop_toTopOf="@id/tv_awc_anm">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_awc_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Doctor: Name of Doctor in Charge"
+
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_awc_asha"
+        app:layout_constraintTop_toTopOf="@id/tv_awc_asha">
+
+    </TextView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
