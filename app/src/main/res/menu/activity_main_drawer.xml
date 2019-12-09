@@ -5,7 +5,7 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_myawc_user"
+            android:id="@+id/nav_myawc"
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_myawc" />
         <item

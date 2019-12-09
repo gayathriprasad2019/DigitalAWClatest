@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/nav_myawc"
-        android:name="com.example.digitalawc.MyAwc"
+        android:name="com.example.digitalawc.myawc.MyAwcfragment"
         android:label="@string/menu_myawc"
         tools:layout="@layout/fragment_myawc" />
 
     <fragment
         android:id="@+id/nav_myprofile"
-        android:name="com.example.digitalawc.UserProfile"
+        android:name="com.example.digitalawc.profile.UserProfilefragment"
         android:label="@string/menu_myprofile"
         tools:layout="@layout/fragment_user_profile" />
 
