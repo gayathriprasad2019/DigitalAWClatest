@@ -9,7 +9,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:id="@+id/profile_id"
+    android:id="@+id/profile_id_admin"
     android:layout_height="match_parent"
     android:gravity="center_vertical"
     >
@@ -17,41 +17,43 @@
         android:id="@+id/tv_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Name: Username"
+        android:text="Name: Admin name"
         android:layout_marginStart="30dp"
         android:fontFamily="sans-serif-black">
 
     </TextView>
 
     <TextView
-        android:id="@+id/tv_user_address"
+        android:id="@+id/tv_admin_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Address: User Address"
+        android:text="Admin Id: AWH Id"
         android:layout_marginStart="30dp"
         android:fontFamily="sans-serif-black">
 
     </TextView>
 
     <TextView
-        android:id="@+id/tv_user_email"
+        android:id="@+id/tv_awc_location"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Email: User Email Id"
+        android:text="Location: AWC Location"
         android:layout_marginStart="30dp"
         android:fontFamily="sans-serif-black">
 
     </TextView>
 
     <TextView
-        android:id="@+id/tv_mobile"
+        android:id="@+id/tv_mobile_admin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mobile: 123456"
+        android:text="Admin Mobile: 123456345"
         android:layout_marginStart="30dp"
         android:fontFamily="sans-serif-black">
 
     </TextView>
+
+
 
 
 

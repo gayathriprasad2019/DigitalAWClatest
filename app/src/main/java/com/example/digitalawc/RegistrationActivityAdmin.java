@@ -22,7 +22,7 @@ public class RegistrationActivityAdmin extends AppCompatActivity {
         startActivity(intent);
     }
     public void processRegisterAdminBtnClick(View view) {
-        Intent intent = new Intent(this, UserDashboardActivity.class);
+        Intent intent = new Intent(this, AdminDashboardActivity.class);
         startActivity(intent);
     }
 

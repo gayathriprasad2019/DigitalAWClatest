@@ -47,5 +47,6 @@
     <string name="menu_myprofile">My Profile</string>
     <string name="menu_share">Share</string>
     <string name="menu_grievances">Grievances</string>
+    <string name="menu_admin_profile">Admin Profile</string>
 
 </resources>

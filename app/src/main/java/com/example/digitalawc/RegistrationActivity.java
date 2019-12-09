@@ -32,7 +32,7 @@ public class RegistrationActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void processRegistrationUserBtnClick(View view) {
-        Intent intent = new Intent(this, UserDashboardActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }
