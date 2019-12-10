@@ -1,59 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_vertical">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:id="@+id/profile_id"
-    android:layout_height="match_parent"
+    android:background="#37ED9EB7"
     android:gravity="center_vertical"
-    >
-    <TextView
-        android:id="@+id/tv_username"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/profile_id"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Name: Username"
-        android:layout_marginStart="30dp"
-        android:fontFamily="sans-serif-black">
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
 
-    </TextView>
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Name: Username"
+            android:textColor="#E91E63">
 
-    <TextView
-        android:id="@+id/tv_user_address"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Address: User Address"
-        android:layout_marginStart="30dp"
-        android:fontFamily="sans-serif-black">
+        </TextView>
 
-    </TextView>
+        <TextView
+            android:id="@+id/tv_user_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Address: User Address"
+            android:textColor="#E91E63">
 
-    <TextView
-        android:id="@+id/tv_user_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Email: User Email Id"
-        android:layout_marginStart="30dp"
-        android:fontFamily="sans-serif-black">
+        </TextView>
 
-    </TextView>
+        <TextView
+            android:id="@+id/tv_user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Email: User Email Id"
+            android:textColor="#E91E63">
 
-    <TextView
-        android:id="@+id/tv_mobile"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Mobile: 123456"
-        android:layout_marginStart="30dp"
-        android:fontFamily="sans-serif-black">
+        </TextView>
 
-    </TextView>
+        <TextView
+            android:id="@+id/tv_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Mobile: 123456"
+            android:textColor="#E91E63">
+
+        </TextView>
 
 
-
-</LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
                 if (username.equals("user") && password.equals("pass")) {
                     Intent intent = new Intent(getApplicationContext(), UserDashboardActivity.class);
                     startActivity(intent);
-                } else {
+                }
+                else {
                     Toast
                             .makeText(getApplicationContext(), "InvalidCredentials" + username, Toast.LENGTH_LONG)
                             .show();
@@ -57,5 +58,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ChangePassword.class);
         startActivity(intent);
     }
+
 
 }

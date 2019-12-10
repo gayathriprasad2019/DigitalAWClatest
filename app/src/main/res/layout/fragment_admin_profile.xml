@@ -1,61 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_vertical">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:id="@+id/profile_id_admin"
-    android:layout_height="match_parent"
-    android:gravity="center_vertical"
-    >
-    <TextView
-        android:id="@+id/tv_username"
+
+    <LinearLayout
+        android:id="@+id/profile_id_admin"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Name: Admin name"
-        android:layout_marginStart="30dp"
-        android:fontFamily="sans-serif-black">
+        android:layout_height="match_parent"
+        android:background="#37ED9EB7"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
 
-    </TextView>
+        <TextView
+            android:id="@+id/tv_admin_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Name: Admin name"
+            android:textColor="#E91E63">
 
-    <TextView
-        android:id="@+id/tv_admin_id"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Admin Id: AWH Id"
-        android:layout_marginStart="30dp"
-        android:fontFamily="sans-serif-black">
+        </TextView>
 
-    </TextView>
+        <TextView
+            android:id="@+id/tv_admin_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Admin Id: AWH Id"
+            android:textColor="#E91E63">
 
-    <TextView
-        android:id="@+id/tv_awc_location"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Location: AWC Location"
-        android:layout_marginStart="30dp"
-        android:fontFamily="sans-serif-black">
+        </TextView>
 
-    </TextView>
+        <TextView
+            android:id="@+id/tv_awc_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Location: AWC Location"
+            android:textColor="#E91E63">
 
-    <TextView
-        android:id="@+id/tv_mobile_admin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Admin Mobile: 123456345"
-        android:layout_marginStart="30dp"
-        android:fontFamily="sans-serif-black">
+        </TextView>
 
-    </TextView>
+        <TextView
+            android:id="@+id/tv_mobile_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Admin Mobile: 123456345"
+            android:textColor="#E91E63">
+
+        </TextView>
 
 
-
-
-
-</LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

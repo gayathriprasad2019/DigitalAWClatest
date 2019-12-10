@@ -30,7 +30,7 @@ public class AdminDashboardActivity extends AppCompatActivity {
         //setSupportActionBar(toolbar);
 
         //FAB
-        FloatingActionButton fab = findViewById(R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.fab_admin_dash);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
