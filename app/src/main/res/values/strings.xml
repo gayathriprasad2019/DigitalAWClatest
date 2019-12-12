@@ -11,7 +11,7 @@
     <string name="tv_registration_address">Address</string>
     <string name="tv_registration_city">City</string>
     <string name="tv_registration_location">Location</string>
-    <string name="tv_registration_gender">Gender</string>
+    <string name="tv_registration_user_type">Type of User</string>
     <string name="tv_registration_mobile">Mobile</string>
     <string name="tv_registration_email">Email</string>
     <string name="tv_registration_admin_id">ID</string>
@@ -26,18 +26,23 @@
     <string name="btn_change_password">Change Password</string>
     <string name="forgot_password">Forgot Password ?</string>
 
-    <string-array name="select_gender">
+    <string-array name="select_user_type">
         <item></item>
-        <item>Male</item>
-        <item>Female</item>
-        <item>Transgender</item>
-        <item>Others</item>
+        <item>Anganwadi Admin</item>
+        <item>Anganwadi User</item>
+
     </string-array>
+    <string-array name="select_user_category">
+        <item></item>
+        <item>Pregnant Woman</item>
+        <item>Child</item>
+    </string-array>
+
     <string name="title_activity_dashboard_user">DashboardUserActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Navigation Title</string>
-    <string name="nav_header_subtitle">Navigation Subtitle</string>
+    <string name="nav_header_title">Digital AWC</string>
+    <string name="nav_header_subtitle">Dashboard</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
@@ -48,5 +53,7 @@
     <string name="menu_share">Share</string>
     <string name="menu_grievances">Grievances</string>
     <string name="menu_admin_profile">Admin Profile</string>
+    <string name="menu_stock">Stock</string>
+    <string name="tv_registration_user_category">Select Category</string>
 
 </resources>

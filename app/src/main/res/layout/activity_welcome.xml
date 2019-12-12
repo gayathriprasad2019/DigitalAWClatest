@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#37ED9EB7"
+    android:background="@drawable/backgnd"
     tools:context="com.example.digitalawc.WelcomeActivity">
 
     <ImageView
@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="450dp"
         android:fontFamily="cursive"
         android:gravity="center_horizontal"
         android:text="@string/welcome_digital_anganwadi_centre"

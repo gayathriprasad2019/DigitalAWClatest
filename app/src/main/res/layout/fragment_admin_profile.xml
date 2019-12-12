@@ -11,7 +11,7 @@
         android:id="@+id/profile_id_admin"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#37ED9EB7"
+        android:background="@drawable/backgnd"
         android:gravity="center_vertical"
         android:orientation="vertical">
 

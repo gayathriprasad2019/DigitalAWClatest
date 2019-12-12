@@ -6,33 +6,18 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_myawc"
+            android:id="@+id/nav_myawc_admin"
             android:icon="@drawable/ic_menu_camera"
             android:title="My AWC" />
         <item
             android:id="@+id/nav_admin_profile"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="My Profile" />
-        <item
-            android:id="@+id/nav_users"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Users" />
+            android:title="Admin Profile" />
+
         <item
             android:id="@+id/nav_stock"
             android:icon="@drawable/ic_menu_manage"
             android:title="Stock" />
-        <item
-            android:id="@+id/nav_events"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Events" />
 
-        <item
-            android:id="@+id/nav_daycare"
-            android:icon="@drawable/ic_menu_share"
-            android:title="Daycare" />
-        <item
-            android:id="@+id/nav_grievances"
-            android:icon="@drawable/ic_menu_send"
-            android:title="Grievances" />
     </group>
 </menu>

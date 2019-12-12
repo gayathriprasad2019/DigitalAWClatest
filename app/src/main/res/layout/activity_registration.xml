@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#37B798E5"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/backgnd">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -47,12 +47,58 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="@string/tv_registration_gender"
+            android:text="@string/tv_registration_user_type"
             android:textColor="#E91E63" />
 
         <Spinner
 
             android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="298dp"
+        tools:layout_editor_absoluteY="160dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:text="@string/tv_registration_admin_id"
+            android:textColor="#E91E63"/>
+
+        <EditText
+            android:id="@+id/et_admin_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+
+        tools:layout_editor_absoluteX="298dp"
+        tools:layout_editor_absoluteY="160dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/tv_registration_user_category"
+            android:textColor="#E91E63" />
+
+        <Spinner
+
+            android:id="@+id/spinner_cat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:spinnerMode="dropdown" />
@@ -168,62 +214,14 @@
             tools:visibility="invisible" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:orientation="horizontal"
 
-        tools:layout_editor_absoluteX="298dp"
-        tools:layout_editor_absoluteY="160dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:paddingTop="15dp"
-            android:text="@string/tv_registration_city"
-            android:textColor="#E91E63" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:inputType="text"
-            android:visibility="visible"
-            tools:visibility="invisible" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:orientation="horizontal"
-
-        tools:layout_editor_absoluteX="298dp"
-        tools:layout_editor_absoluteY="160dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:paddingTop="15dp"
-            android:text="@string/tv_registration_location"
-            android:textColor="#E91E63" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:inputType="text"
-            android:visibility="visible"
-            tools:visibility="invisible" />
-    </LinearLayout>
 
     <Button
         android:id="@+id/btn_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:background="#A270DF"
+        android:layout_marginStart="110dp"
+        android:background="#6069A4"
         android:onClick="processRegistrationUserBtnClick"
         android:text="@string/btn_register"
         android:textColor="#E91E63" />

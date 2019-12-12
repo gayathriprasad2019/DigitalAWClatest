@@ -49,10 +49,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void processSignUpLinkClickAdmin(View view) {
-        Intent intent = new Intent(this, RegistrationActivityAdmin.class);
-        startActivity(intent);
-    }
+
 
     public void processForgotPasswordLinkClick(View view) {
         Intent intent = new Intent(this, ChangePassword.class);

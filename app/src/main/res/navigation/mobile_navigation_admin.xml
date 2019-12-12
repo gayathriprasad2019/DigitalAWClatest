@@ -3,19 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation_admin"
-    app:startDestination="@+id/nav_myprofile">
+    app:startDestination="@+id/nav_admin_profile">
 
     <fragment
-        android:id="@+id/nav_myawc"
-        android:name="com.example.digitalawc.myawc.MyAwcfragment"
+        android:id="@+id/nav_myawc_admin"
+        android:name="com.example.digitalawc.myawc.MyAwcAdminfragment"
         android:label="@string/menu_myawc"
         tools:layout="@layout/fragment_myawc" />
 
     <fragment
-        android:id="@+id/nav_myprofile"
+        android:id="@+id/nav_admin_profile"
         android:name="com.example.digitalawc.profile.AdminProfilefragment"
         android:label="@string/menu_admin_profile"
         tools:layout="@layout/fragment_admin_profile" />
+    <fragment
+        android:id="@+id/nav_stock"
+        android:name="com.example.digitalawc.stock.Stockfragment"
+        android:label="@string/menu_stock"
+        tools:layout="@layout/fragment_stock" />
 
 
 </navigation>

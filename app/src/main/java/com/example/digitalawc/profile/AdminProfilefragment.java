@@ -19,7 +19,7 @@ public class AdminProfilefragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_admin_profile, container, false);
-        itemView=view.findViewById(R.id.nav_myprofile);
+        itemView=view.findViewById(R.id.nav_admin_profile);
         return view;
     }
 }

@@ -30,23 +30,23 @@ public class AdminDashboardActivity extends AppCompatActivity {
         //setSupportActionBar(toolbar);
 
         //FAB
-        FloatingActionButton fab = findViewById(R.id.fab_admin_dash);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "This is a Floating Action Button", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        //FloatingActionButton fab = findViewById(R.id.fab_admin_dash);
+        //fab.setOnClickListener(new View.OnClickListener() {
+            //@Override
+            //public void onClick(View view) {
+               // Snackbar.make(view, "This is a Floating Action Button", Snackbar.LENGTH_LONG)
+                    //    .setAction("Action", null).show();
+           // }
+       // });
         DrawerLayout drawer = findViewById(R.id.drawer_layout_admin);
         NavigationView navigationView = findViewById(R.id.nav_view_admin);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_myawc, R.id.nav_myprofile)
+                R.id.nav_myawc_admin, R.id.nav_admin_profile,R.id.nav_stock)
                 .setDrawerLayout(drawer)
                 .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+        NavController navController = Navigation.findNavController(this,R.id.nav_host_fragment_admin);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
     }
@@ -60,7 +60,7 @@ public class AdminDashboardActivity extends AppCompatActivity {
 
     @Override
     public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_admin);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
