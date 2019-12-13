@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_myprofile">
+    app:startDestination="@+id/nav_myawc">
 
     <fragment
         android:id="@+id/nav_myawc"
@@ -16,6 +16,11 @@
         android:name="com.example.digitalawc.profile.UserProfilefragment"
         android:label="@string/menu_myprofile"
         tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/nav_myschemes_user"
+        android:name="com.example.digitalawc.schemes.Schemesfragment"
+        android:label="@string/menu_myschemes_user"
+        tools:layout="@layout/fragment_user_schemes" />
 
 
 </navigation>

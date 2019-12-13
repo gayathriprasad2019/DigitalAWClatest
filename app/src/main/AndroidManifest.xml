@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.digitalawc">
-
+        package="com.example.digitalawc">
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
 
         android:allowBackup="true"
@@ -24,21 +24,22 @@
 
 
         <activity
-            android:name=".RegistrationActivity"
-            android:parentActivityName=".MainActivity"/>
+            android:name=".RegistrationActivity"/>
+
 
         <activity
-            android:name=".ChangePassword"
-            android:parentActivityName=".MainActivity"/>
+            android:name=".ChangePassword"/>
+
+
         <activity
-            android:name=".DisplayCredentials"
-            android:parentActivityName=".MainActivity"/>
+            android:name=".DisplayCredentials"/>
+
         <activity
             android:name=".UserDashboardActivity"
-            android:parentActivityName=".MainActivity"/>
+            />
         <activity
             android:name=".AdminDashboardActivity"
-            android:parentActivityName=".MainActivity"/>
+            />
 
 
 

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
         final EditText etPassword = findViewById(R.id.et_password);
         Button btnLogin = findViewById(R.id.btn_login);
 
-
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,30 +31,25 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), UserDashboardActivity.class);
                     startActivity(intent);
                 }
+                else if(username.equals("admin")&&password.equals("admin")){
+                    Intent intent = new Intent(getApplicationContext(), AdminDashboardActivity.class);
+                    startActivity(intent);
+                }
                 else {
                     Toast
-                            .makeText(getApplicationContext(), "InvalidCredentials" + username, Toast.LENGTH_LONG)
+                            .makeText(getApplicationContext(), "InvalidCredentials", Toast.LENGTH_LONG)
                             .show();
-
                 }
             }
         });
-
-
     }
-
 
     public void processSignUpLinkClick(View view) {
         Intent intent = new Intent(this, RegistrationActivity.class);
         startActivity(intent);
     }
-
-
-
     public void processForgotPasswordLinkClick(View view) {
         Intent intent = new Intent(this, ChangePassword.class);
         startActivity(intent);
     }
-
-
 }

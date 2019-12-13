@@ -1,12 +1,11 @@
 package com.example.digitalawc;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class WelcomeActivity extends AppCompatActivity {
 
@@ -19,7 +18,7 @@ public class WelcomeActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //This method is used so that your splash activity can cover the entire screen.
         setContentView(R.layout.activity_welcome);
-        ImageView logo = (ImageView) findViewById(R.id.imageView);
+        ImageView logo = findViewById(R.id.imageView);
         logo.setImageResource(R.drawable.awc_logo);
         //this will bind your MainActivity.class file with activity_main.
         new Handler().postDelayed(new Runnable() {

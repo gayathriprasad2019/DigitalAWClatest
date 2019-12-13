@@ -17,10 +17,10 @@
         android:label="@string/menu_admin_profile"
         tools:layout="@layout/fragment_admin_profile" />
     <fragment
-        android:id="@+id/nav_stock"
-        android:name="com.example.digitalawc.stock.Stockfragment"
-        android:label="@string/menu_stock"
-        tools:layout="@layout/fragment_stock" />
+        android:id="@+id/nav_schemes"
+        android:name="com.example.digitalawc.schemes.SchemesAdminfragment"
+        android:label="@string/menu_myschemes"
+        tools:layout="@layout/fragment_schemes" />
 
 
 </navigation>

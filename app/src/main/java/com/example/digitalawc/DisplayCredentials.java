@@ -16,15 +16,13 @@ public class DisplayCredentials extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.display_credentials);
 
-        Toast.makeText(getApplicationContext(),"UserId is your mobile number"+R.id.et_mobile,Toast.LENGTH_LONG)
-               .show() ;
-        Toast.makeText(getApplicationContext(),"Password"+R.id.et_password,Toast.LENGTH_LONG)
-               .show();
 
+           }
 
+    public void processSignInLinkClickDisplay(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
-
-
 
 
 }

@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgnd"
     android:gravity="center"
-    android:orientation="vertical"
-    android:background="@drawable/backgnd">
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,6 +27,7 @@
             android:textColor="#E91E63" />
 
         <EditText
+            android:id="@+id/et_reg_name"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="text"
@@ -57,6 +58,7 @@
             android:layout_height="wrap_content"
             android:spinnerMode="dropdown" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -72,14 +74,15 @@
             android:layout_height="match_parent"
             android:paddingTop="15dp"
             android:text="@string/tv_registration_admin_id"
-            android:textColor="#E91E63"/>
+            android:textColor="#E91E63" />
 
         <EditText
             android:id="@+id/et_admin_id"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:inputType="number"/>
+            android:inputType="number" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -101,7 +104,8 @@
             android:id="@+id/spinner_cat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:spinnerMode="dropdown" />
+            android:spinnerMode="dropdown"
+            android:visibility="visible" />
     </LinearLayout>
 
     <LinearLayout
@@ -152,6 +156,7 @@
             android:textColor="#E91E63" />
 
         <EditText
+            android:id="@+id/et_reg_email"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="textEmailAddress"
@@ -179,7 +184,7 @@
             android:textColor="#E91E63" />
 
         <EditText
-            android:id="@+id/et_password"
+            android:id="@+id/et_reg_password"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="textPassword"
@@ -207,6 +212,7 @@
             android:textColor="#E91E63" />
 
         <EditText
+            android:id="@+id/et_reg_address"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="text"
@@ -215,13 +221,12 @@
     </LinearLayout>
 
 
-
     <Button
         android:id="@+id/btn_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="110dp"
-        android:background="#6069A4"
+        android:background="#404041"
         android:onClick="processRegistrationUserBtnClick"
         android:text="@string/btn_register"
         android:textColor="#E91E63" />

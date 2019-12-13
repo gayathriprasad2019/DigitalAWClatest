@@ -27,6 +27,8 @@ public class ChangePassword extends AppCompatActivity {
            //TODO update password in DB
             Intent intent = new Intent(this,DisplayCredentials.class);
             startActivity(intent);
+            Toast.makeText(getApplicationContext(),"Password Changed Successfully"+R.id.et_mobile,Toast.LENGTH_LONG)
+                    .show() ;
         }
         else {
             Toast.makeText(getApplicationContext(),"Passwords does not match",Toast.LENGTH_LONG)

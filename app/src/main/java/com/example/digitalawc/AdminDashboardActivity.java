@@ -2,21 +2,13 @@ package com.example.digitalawc;
 
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.View;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
-
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
 
 public class AdminDashboardActivity extends AppCompatActivity {
 
@@ -43,7 +35,7 @@ public class AdminDashboardActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_myawc_admin, R.id.nav_admin_profile,R.id.nav_stock)
+                R.id.nav_myawc_admin, R.id.nav_admin_profile,R.id.nav_schemes)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this,R.id.nav_host_fragment_admin);

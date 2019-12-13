@@ -34,8 +34,14 @@
     </string-array>
     <string-array name="select_user_category">
         <item></item>
-        <item>Pregnant Woman</item>
+        <item>Not Applicable</item>
+        <item>Pregnant</item>
         <item>Child</item>
+    </string-array>
+    <string-array name="select_scheme">
+        <item></item>
+        <item>Users</item>
+        <item>Events</item>
     </string-array>
 
     <string name="title_activity_dashboard_user">DashboardUserActivity</string>
@@ -53,7 +59,11 @@
     <string name="menu_share">Share</string>
     <string name="menu_grievances">Grievances</string>
     <string name="menu_admin_profile">Admin Profile</string>
-    <string name="menu_stock">Stock</string>
+    <string name="menu_myschemes">My Schemes</string>
     <string name="tv_registration_user_category">Select Category</string>
+    <string name="display_text">UserId is your mobile number</string>
+    <string name="display_text_1">You can change your password anytime from Dashboard</string>
+    <string name="tv_login_to_continue">Login to Continue</string>
+    <string name="menu_myschemes_user">UserSchemes</string>
 
 </resources>
